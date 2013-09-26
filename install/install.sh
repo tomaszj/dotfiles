@@ -4,9 +4,12 @@
 pushd .
 
 # Find the directory that this script is running from
-WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $WORKING_DIR/..
+INSTALL_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $INSTALL_SCRIPT_DIR/..
 
-echo $(pwd)
+WORKING_DIR=$(pwd)
+
+# Link to vim config files
+ln -nfs $WORKING_DIR/vim/.vimrc ~/.vimrc
 
 popd
