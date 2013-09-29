@@ -1,10 +1,12 @@
-# Lines configured by zsh-newuser-install
+# History settings
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd extendedglob
+
+# Emacs bindings
 bindkey -e
-# End of lines configured by zsh-newuser-install
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/tomaszj/.zshrc'
 
