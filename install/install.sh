@@ -20,6 +20,8 @@ for rcfile in $WORKING_DIR/zsh/zprezto/runcoms/^README.md(.N); do
   ln -nfs "$rcfile" "$HOME/.${rcfile:t}"
 done
 
+ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto 
+
 popd 1> /dev/null
 
 echo "Done!"
