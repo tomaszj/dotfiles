@@ -14,6 +14,9 @@ WORKING_DIR=$(pwd)
 # Link to vim config files
 ln -nfs $WORKING_DIR/vim/vimrc ~/.vimrc
 
+# Link to zsh config files
+ln -nfs $WORKING_DIR/zsh/zshrc ~/.zshrc
+
 popd 1> /dev/null
 
 echo "Done!"
