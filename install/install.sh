@@ -17,14 +17,17 @@ if find $WORKING_DIR/zsh/zprezto -maxdepth 0 -empty | read v; then
 fi
 
 # Link to vim config files
+echo "Linking ~/.vimrc"
 ln -nfs $WORKING_DIR/vim/vimrc $HOME/.vimrc
 
 # Link to zsh config files using zprezto
 setopt EXTENDED_GLOB
 for rcfile in $WORKING_DIR/zsh/zprezto/runcoms/^README.md(.N); do
+  echo "Linking ~/.${rcfile:t}"
   ln -nfs "$rcfile" "$HOME/.${rcfile:t}"
 done
 
+echo "Linking ~/.zprezto folder"
 ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto 
 
 popd 1> /dev/null
