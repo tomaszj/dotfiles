@@ -13,6 +13,7 @@ You'll need to have:
 ## Installation
 
 Fetch the repo with submodules and run the install script:
+
     $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
     $ cd YOUR_FOLDER
     $ install/install.sh
