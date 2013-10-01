@@ -3,6 +3,14 @@ TJ's dotfiles
 
 Yet another personal dotfiles repo.
 
+## What's included
+
+* Zsh config using zprezto
+* Vim config using vundle
+    * remap for ';' to mimic ':'
+    * no swap files generated
+* Simple installation script
+
 ## Pre-requisites
 
 You'll need to have:
