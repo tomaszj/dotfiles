@@ -65,6 +65,8 @@ set hlsearch
 " which are considered to add usability. Which, if any, of these options to
 " use is very much a personal preference, but they are harmless.
 
+set clipboard=unnamed
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
@@ -144,7 +146,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 
 "------------------------------------------------------------
-" Mappings {{{1
+" Backup/swap file {{{1
 "
 " Set no backupping and swap file
 set nobackup
