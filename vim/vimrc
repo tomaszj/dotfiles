@@ -113,8 +113,8 @@ set number
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
-" Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
+" Use <F2> to toggle between 'paste' and 'nopaste'
+set pastetoggle=<F2>
 
 
 "------------------------------------------------------------
@@ -133,8 +133,20 @@ set expandtab
 " which is the default
 map Y y$
 
+" Use a semicolon (;) as colon (:) to reduce a number of keystrokes
+nnoremap ; :
+
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+"------------------------------------------------------------
+
+
+"------------------------------------------------------------
+" Mappings {{{1
+"
+" Set no backupping and swap file
+set nobackup
+set noswapfile
 "------------------------------------------------------------
