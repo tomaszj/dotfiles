@@ -31,6 +31,13 @@ done
 echo "Linking ~/.zprezto folder"
 ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto 
 
+# Create a folder for user zsh scripts
+USER_ZSH_SCRIPTS_PATH="$HOME/.zsh.scripts"
+if [[ ! -d $USER_ZSH_SCRIPTS_PATH ]]; then
+  echo "Creating ~/${USER_ZSH_SCRIPTS_PATH:t} folder for user scripts"
+  mkdir $USER_ZSH_SCRIPTS_PATH
+fi
+
 popd 1> /dev/null
 
 echo "Done!"
