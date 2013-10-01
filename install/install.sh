@@ -38,6 +38,9 @@ if [[ ! -d $USER_ZSH_SCRIPTS_PATH ]]; then
   mkdir $USER_ZSH_SCRIPTS_PATH
 fi
 
+echo "Installing vim bundles"
+vim +BundleInstall +qall
+
 popd 1> /dev/null
 
 echo "Done!"
