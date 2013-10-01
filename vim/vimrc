@@ -1,15 +1,27 @@
-" Set 'nocompatible' to ward off unexpected things that your distro might
-" have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
-" Attempt to determine the type of a file based on its name and possibly its
-" contents. Use this to allow intelligent auto-indenting for each filetype,
-" and for plugins that are filetype specific.
-filetype indent plugin on
+" Required by Vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle' 
+
+"
+" --- List of bundles to be installed ---
+"
+
+
+"
+" --- End of list of bundles ---
+"
+
+" Filetype detection enabled back again
+filetype plugin indent on
 
 " Enable syntax highlighting
 syntax on
-
 
 "------------------------------------------------------------
 " Must have options {{{1

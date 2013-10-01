@@ -17,8 +17,9 @@ if find $WORKING_DIR/zsh/zprezto -maxdepth 0 -empty | read v; then
 fi
 
 # Link to vim config files
-echo "Linking ~/.vimrc"
+echo "Linking ~/.vimrc and ~/.vim folder"
 ln -nfs $WORKING_DIR/vim/vimrc $HOME/.vimrc
+ln -nfs $WORKING_DIR/vim $HOME/.vim
 
 # Link to zsh config files using zprezto
 setopt EXTENDED_GLOB
