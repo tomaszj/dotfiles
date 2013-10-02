@@ -8,7 +8,8 @@ Yet another personal dotfiles repo.
 * Zsh config using zprezto
     * all scripts (such as exports, paths, etc.) can be placed in ~/.zsh.scripts folder
 * Vim config using vundle
-    * vim-snipmate plugin
+    * vim-snipmate plugin for easy snippet insertion on TAB
+    * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
     * remap for ';' to mimic ':'
     * \<F2\> For toggling paste mode
     * no swap files generated
