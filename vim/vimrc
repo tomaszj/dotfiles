@@ -141,6 +141,8 @@ nnoremap ; :
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Use backslash as a qualifier for using vim-easymotion
+let g:EasyMotion_leader_key = '<Leader>'
 "------------------------------------------------------------
 
 
