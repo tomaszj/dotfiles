@@ -40,7 +40,7 @@ if [[ ! -d $USER_ZSH_SCRIPTS_PATH ]]; then
 fi
 
 echo "Installing vim bundles"
-vim +BundleInstall +qall
+vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
 
 popd 1> /dev/null
 

@@ -113,6 +113,11 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F2> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F2>
 
+"------------------------------------------------------------
+" Look-a-likes {{{1
+set background=dark
+colorscheme solarized
+
 
 "------------------------------------------------------------
 " Indentation options {{{1

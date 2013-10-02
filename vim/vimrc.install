@@ -1,0 +1,17 @@
+" vim config used only when installing bundles.
+set nocompatible
+
+" Required by Vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle' 
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
+" Filetype detection enabled back again
+filetype plugin indent on

@@ -11,3 +11,6 @@ Bundle "garbas/vim-snipmate"
 " Surround
 Bundle "tpope/vim-surround"
 Bundle "tpope/vim-repeat"
+
+" Solarized vim theme
+Bundle "altercation/vim-colors-solarized"
