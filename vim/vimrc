@@ -8,19 +8,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle' 
 
-"
-" --- List of bundles to be installed ---
-"
-
-" Snipmate, vim-snippets and its dependencies
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle 'honza/vim-snippets'
-Bundle "garbas/vim-snipmate"
-
-"
-" --- End of list of bundles ---
-"
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 " Filetype detection enabled back again
 filetype plugin indent on
