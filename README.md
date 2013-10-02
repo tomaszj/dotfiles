@@ -10,7 +10,8 @@ Yet another personal dotfiles repo.
 * Vim config using vundle
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
-    * remap for ';' to mimic ':'
+    * vim-airline for improved status line
+    * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
 * Simple installation script
