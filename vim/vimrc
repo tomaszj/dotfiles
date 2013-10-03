@@ -126,6 +126,9 @@ set expandtab
 "------------------------------------------------------------
 " Mappings {{{1
 "
+" Map ',' to be the leader key
+let mapleader = ','
+
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
@@ -138,7 +141,12 @@ nnoremap ; :
 nnoremap <C-L> :nohl<CR><C-L>
 
 " Use backslash as a qualifier for using vim-easymotion
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = '<Leader><Leader>'
+
+" Better search regexes
+nnoremap / /\v
+vnoremap / /\v
+
 "------------------------------------------------------------
 
 
