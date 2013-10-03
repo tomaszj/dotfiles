@@ -11,6 +11,7 @@ Yet another personal dotfiles repo.
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
     * vim-airline for improved status line
+    * sparkup for Zen Coding (try div#header[param=value] > ul > li\*3 < p{Waaat?} and hit Ctrl+E)
     * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
@@ -30,4 +31,4 @@ Fetch the repo with submodules and run the install script:
     $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
     $ cd YOUR_FOLDER
     $ install/install.sh
-    
+

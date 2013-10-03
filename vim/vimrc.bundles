@@ -21,3 +21,6 @@ Bundle 'bling/vim-airline'
 " Easymotion for easier cursor movement in the text
 Bundle 'Lokaltog/vim-easymotion'
 
+" Sparkup for Zen Coding (i.e. expanding div#header to HTML)
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
