@@ -19,6 +19,7 @@ fi
 # Link to vim config files
 echo "Linking ~/.vimrc and ~/.vim folder"
 ln -nfs $WORKING_DIR/vim/vimrc $HOME/.vimrc
+ln -nfs $WORKING_DIR/vim/gvimrc $HOME/.gvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.vimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.vim
 
