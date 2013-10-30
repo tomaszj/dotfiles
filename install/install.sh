@@ -43,6 +43,14 @@ fi
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
 
+if [[ -d "$HOME/.vim/bundle/command-t" ]]; then
+  echo "Building C extension for command-t vim plugin"
+  COMMAND_T_DIR="$HOME/.vim/bundle/command-t/ruby/command-t"
+  ruby "$COMMAND_T_DIR/extconf.rb" 1> /dev/null
+  cd $COMMAND_T_DIR
+  make 1> /dev/null
+fi
+
 popd 1> /dev/null
 
 echo "Done!"
