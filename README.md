@@ -10,6 +10,7 @@ Yet another personal dotfiles repo.
 * Vim config using vundle
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
+    * Command-t plugin for easy file access (use ,t to open the selection pop-up, Ctrl+C to dismiss it)
     * vim-airline for improved status line
     * vim-easymotion for vimperator-like finding (use ,,\<motion\>, e.g. ,,w)
     * sparkup for Zen Coding (try div#header[param=value] > ul > li\*3 < p{Waaat?} and hit Ctrl+E)
@@ -17,7 +18,7 @@ Yet another personal dotfiles repo.
     * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
-* Simple installation script
+* Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
 
