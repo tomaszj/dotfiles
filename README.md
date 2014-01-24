@@ -18,6 +18,7 @@ Yet another personal dotfiles repo.
     * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
+    * matchit for better % matching - tags, if/else clauses, etc.
 * Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
