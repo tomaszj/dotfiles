@@ -30,3 +30,5 @@ Bundle 'maxbrunsfeld/vim-yankstack'
 " Command-t for TextMate-like file finding
 Bundle 'git://git.wincent.com/command-t.git'
 
+" Matchit for better % behaviour - tags, etc.
+Bundle 'matchit.zip'
