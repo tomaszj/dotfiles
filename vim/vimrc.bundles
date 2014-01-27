@@ -32,3 +32,6 @@ Bundle 'git://git.wincent.com/command-t.git'
 
 " Matchit for better % behaviour - tags, etc.
 Bundle 'matchit.zip'
+
+" Vim Scala
+Bundle 'derekwyatt/vim-scala'
