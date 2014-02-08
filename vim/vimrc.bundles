@@ -63,3 +63,6 @@ Bundle 'Raimondi/delimitMate'
 " Ack for project-wide searching
 Bundle 'ack.vim'
 
+" vim-commentary for easy line commenting
+Bundle 'tpope/vim-commentary'
+

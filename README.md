@@ -29,6 +29,7 @@ Yet another personal dotfiles repo.
     * vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
     * delimitMate for insertion of closing quotes, brackets, etc.
     * Ack for project-wide searching
+    * vim-commentary for easy line commenting
 
 * Simple installation script, which also compiles Command-t C extension
 
