@@ -25,6 +25,7 @@ Yet another personal dotfiles repo.
     * vim-fugitive for in-Vim Git support
     * syntastic for on-the-go syntax checking
     * vim-signify for showing diff on lines within the editor
+    * vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
 
 * Simple installation script, which also compiles Command-t C extension
 

@@ -51,3 +51,5 @@ Bundle 'scrooloose/syntastic'
 " Signify for showing quick diff in the left column
 Bundle 'mhinz/vim-signify'
 
+" vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
+Bundle 'tpope/vim-endwise'
