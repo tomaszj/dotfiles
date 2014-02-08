@@ -122,6 +122,12 @@ set softtabstop=2
 set expandtab
 
 "------------------------------------------------------------
+" netrw options {{{1
+"
+" netrw settings.
+let g:netrw_liststyle=3
+
+"------------------------------------------------------------
 " Mappings {{{1
 "
 " Setup yankstack's mappings
@@ -148,8 +154,8 @@ nnoremap <C-L> :nohl<CR><C-L>
 let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 " Better search regexes
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 
 "------------------------------------------------------------
 

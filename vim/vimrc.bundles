@@ -66,3 +66,6 @@ Bundle 'ack.vim'
 " vim-commentary for easy line commenting
 Bundle 'tpope/vim-commentary'
 
+" Simple plugin for setting up project layout with netrw with one command
+Bundle 'tomaszj/lexplore.vim'
+
