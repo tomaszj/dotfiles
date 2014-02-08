@@ -26,6 +26,7 @@ Yet another personal dotfiles repo.
     * syntastic for on-the-go syntax checking
     * vim-signify for showing diff on lines within the editor
     * vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
+    * delimitMate for insertion of closing quotes, brackets, etc.
 
 * Simple installation script, which also compiles Command-t C extension
 

@@ -53,3 +53,7 @@ Bundle 'mhinz/vim-signify'
 
 " vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
 Bundle 'tpope/vim-endwise'
+
+" Delimitmate for automatic adding of closing braces, etc."
+Bundle 'Raimondi/delimitMate'
+
