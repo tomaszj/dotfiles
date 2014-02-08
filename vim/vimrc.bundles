@@ -18,6 +18,9 @@ Bundle 'altercation/vim-colors-solarized'
 " Airline status line
 Bundle 'bling/vim-airline'
 
+" vim-bufferline for display of used buffers
+Bundle 'bling/vim-bufferline'
+
 " Easymotion for easier cursor movement in the text
 Bundle 'Lokaltog/vim-easymotion'
 

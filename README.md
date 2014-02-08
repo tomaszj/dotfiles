@@ -12,6 +12,7 @@ Yet another personal dotfiles repo.
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
     * Command-t plugin for easy file access (use ,t to open the selection pop-up, Ctrl+C to dismiss it)
     * vim-airline for improved status line
+    * vim-bufferline for easy display of used buffers in the status line
     * vim-easymotion for vimperator-like finding (use ,,\<motion\>, e.g. ,,w)
     * sparkup for Zen Coding (try div#header[param=value] > ul > li\*3 < p{Waaat?} and hit Ctrl+E)
     * yankstack for cycling through last yank items when pasting (use Ctrl+p after pasting)
@@ -24,6 +25,7 @@ Yet another personal dotfiles repo.
     * vim-fugitive for in-Vim Git support
     * syntastic for on-the-go syntax checking
     * vim-signify for showing diff on lines within the editor
+
 * Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
