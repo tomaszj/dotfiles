@@ -21,6 +21,7 @@ Yet another personal dotfiles repo.
     * no swap files generated
     * matchit for better % matching - tags, if/else clauses, etc.
     * vim-scala for better Scala support
+    * vim-ruby for better Ruby support
     * vim-rails for better Rails support
     * vim-fugitive for in-Vim Git support
     * syntastic for on-the-go syntax checking

@@ -39,6 +39,9 @@ Bundle 'matchit.zip'
 " Vim Scala
 Bundle 'derekwyatt/vim-scala'
 
+" Vim Ruby
+Bundle 'vim-ruby/vim-ruby'
+
 " Vim Rails
 Bundle 'tpope/vim-rails'
 
