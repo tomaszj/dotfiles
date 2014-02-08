@@ -28,6 +28,7 @@ Yet another personal dotfiles repo.
     * vim-signify for showing diff on lines within the editor
     * vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
     * delimitMate for insertion of closing quotes, brackets, etc.
+    * Ack for project-wide searching
 
 * Simple installation script, which also compiles Command-t C extension
 

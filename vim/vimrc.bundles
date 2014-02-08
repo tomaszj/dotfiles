@@ -60,3 +60,6 @@ Bundle 'tpope/vim-endwise'
 " Delimitmate for automatic adding of closing braces, etc."
 Bundle 'Raimondi/delimitMate'
 
+" Ack for project-wide searching
+Bundle 'ack.vim'
+
