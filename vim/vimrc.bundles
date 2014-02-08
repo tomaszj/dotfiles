@@ -39,3 +39,6 @@ Bundle 'derekwyatt/vim-scala'
 " Vim Rails
 Bundle 'tpope/vim-rails'
 
+" Git support
+Bundle 'tpope/vim-fugitive'
+

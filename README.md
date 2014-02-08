@@ -21,6 +21,7 @@ Yet another personal dotfiles repo.
     * matchit for better % matching - tags, if/else clauses, etc.
     * vim-scala for better Scala support
     * vim-rails for better Rails support
+    * vim-fugitive for in-Vim Git support
 * Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
