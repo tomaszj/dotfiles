@@ -22,6 +22,8 @@ Yet another personal dotfiles repo.
     * vim-scala for better Scala support
     * vim-rails for better Rails support
     * vim-fugitive for in-Vim Git support
+    * syntastic for on-the-go syntax checking
+    * vim-signify for showing diff on lines within the editor
 * Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
