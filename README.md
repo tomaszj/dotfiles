@@ -20,6 +20,7 @@ Yet another personal dotfiles repo.
     * no swap files generated
     * matchit for better % matching - tags, if/else clauses, etc.
     * vim-scala for better Scala support
+    * vim-rails for better Rails support
 * Simple installation script, which also compiles Command-t C extension
 
 ## Pre-requisites
