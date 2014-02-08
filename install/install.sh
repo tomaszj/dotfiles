@@ -11,9 +11,9 @@ cd $INSTALL_SCRIPT_DIR/..
 
 WORKING_DIR="$(pwd)"
 
-if find $WORKING_DIR/zsh/zprezto -maxdepth 0 -empty | read v; then 
+if find $WORKING_DIR/zsh/zprezto -maxdepth 0 -empty | read v; then
   echo "Custom zprezto not present, fetching the default one"
-  git clone --recursive https://github.com/sorin-ionescu/prezto.git $WORKING_DIR/zsh/zprezto 
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git $WORKING_DIR/zsh/zprezto
 fi
 
 # Link to vim config files
@@ -31,7 +31,7 @@ for rcfile in $WORKING_DIR/zsh/zprezto/runcoms/^README.md(.N); do
 done
 
 echo "Linking ~/.zprezto folder"
-ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto 
+ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto
 
 # Create a folder for user zsh scripts
 USER_ZSH_SCRIPTS_PATH="$HOME/.zsh.scripts"
