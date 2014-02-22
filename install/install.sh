@@ -51,6 +51,12 @@ if [[ -d "$HOME/.vim/bundle/command-t" ]]; then
   make 1> /dev/null
 fi
 
+# Setting git aliases
+echo "Setting git aliases"
+
+# Setup git aliases using the script
+source "$WORKING_DIR/git/set_git_aliases.sh"
+
 popd 1> /dev/null
 
 echo "Done!"
