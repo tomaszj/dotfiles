@@ -7,6 +7,9 @@ Yet another personal dotfiles repo.
 
 * Zsh config using zprezto
     * all scripts (such as exports, paths, etc.) can be placed in ~/.zsh.scripts folder
+* Set (short for now) of git aliases, set up by script
+    * git hist - for easy and human-readable git history
+    * git ci - usual alias for git commit
 * Vim config using vundle
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
