@@ -156,8 +156,12 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 " nnoremap / /\v
 " vnoremap / /\v
 
+" CtrlP fuzzy finder settings
 "------------------------------------------------------------
+"
+let g:ctrlp_map = '<Leader>t'
 
+"------------------------------------------------------------
 
 "------------------------------------------------------------
 " Backup/swap file {{{1

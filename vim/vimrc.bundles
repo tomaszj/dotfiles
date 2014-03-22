@@ -33,8 +33,8 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Yankstack for easy viewing of previous registers' contents
 Bundle 'maxbrunsfeld/vim-yankstack'
 
-" Command-t for TextMate-like file finding
-Bundle 'git://git.wincent.com/command-t.git'
+" CtrlP for fuzzy filename search
+Bundle 'kien/ctrlp.vim'
 
 " Matchit for better % behaviour - tags, etc.
 Bundle 'matchit.zip'
