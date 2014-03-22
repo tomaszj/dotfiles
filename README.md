@@ -10,11 +10,12 @@ Yet another personal dotfiles repo.
 * Set (short for now) of git aliases, set up by script
     * git hist - for easy and human-readable git history
     * git ci - usual alias for git commit
+    * git st - git status
 * Vim config using vundle
     * NERDTree for file exploring
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
-    * Command-t plugin for easy file access (use ,t to open the selection pop-up, Ctrl+C to dismiss it)
+    * CtrlP plugin for easy file access (use ,t to open the selection pop-up)
     * vim-airline for improved status line
     * vim-bufferline for easy display of used buffers in the status line
     * vim-easymotion for vimperator-like finding (use ,,\<motion\>, e.g. ,,w)
