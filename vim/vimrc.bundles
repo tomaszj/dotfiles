@@ -69,3 +69,7 @@ Bundle 'ack.vim'
 " vim-commentary for easy line commenting
 Bundle 'tpope/vim-commentary'
 
+" Rainbow Parentheses for better colouring when needed
+" I am looking at you, Clojure
+Bundle 'kien/rainbow_parentheses.vim'
+
