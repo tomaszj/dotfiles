@@ -40,14 +40,22 @@ if [[ ! -d $USER_ZSH_SCRIPTS_PATH ]]; then
   mkdir $USER_ZSH_SCRIPTS_PATH
 fi
 
+# Create an empty folder for dotfiles zsh scripts
+DOTFILES_ZSH_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts"
+if [[ -d $DOTFILES_ZSH_SCRIPTS_PATH ]]; then
+  rm -rf $DOTFILES_ZSH_SCRIPTS_PATH
+fi
+
+mkdir $DOTFILES_ZSH_SCRIPTS_PATH
+
+# Populate the startup scripts
+cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
+
+
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
 
-# Setting git aliases
-echo "Setting git aliases"
-
-# Setup git aliases using the script
-source "$WORKING_DIR/git/set_git_aliases.sh"
+# source "$WORKING_DIR/git/set_git_aliases.sh"
 
 popd 1> /dev/null
 
