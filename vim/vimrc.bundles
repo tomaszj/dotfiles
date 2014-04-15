@@ -76,3 +76,13 @@ Bundle 'kien/rainbow_parentheses.vim'
 " vim-coffee-script for CoffeeScript support
 Bundle 'kchmck/vim-coffee-script'
 
+" vim-textobj-rubyblock for ruby block selection
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock' 
+
+" Markdown support
+Bundle 'plasticboy/vim-markdown'
+
+" Better Join!
+Bundle 'sk1418/Join'
+
