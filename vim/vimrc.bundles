@@ -73,3 +73,6 @@ Bundle 'tpope/vim-commentary'
 " I am looking at you, Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 
+" vim-coffee-script for CoffeeScript support
+Bundle 'kchmck/vim-coffee-script'
+
