@@ -177,3 +177,6 @@ set noswapfile
 let g:sparkupExecuteMapping = '<c-e>'
 "------------------------------------------------------------
 
+" Configure delimitMate
+let delimitMate_expand_cr = 2
+
