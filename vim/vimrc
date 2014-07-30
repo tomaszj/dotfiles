@@ -180,3 +180,13 @@ let g:sparkupExecuteMapping = '<c-e>'
 " Configure delimitMate
 let delimitMate_expand_cr = 2
 
+"------------------------------------------------------------
+" Ignore typical folders when using Ctrl-P
+"
+set wildignore+=*/tmp/**/*
+set wildignore+=*/vendor/**/*       " Ignore frontend apps' dependencies
+set wildignore+=*/node_modules/**/* " Ignore node install files
+set wildignore+=*/target/**/*       " Ignore SBT products
+set wildignore+=*/results/**/*      " Ignore Gatling results
+"------------------------------------------------------------
+
