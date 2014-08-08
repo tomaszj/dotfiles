@@ -124,7 +124,8 @@ set expandtab
 "------------------------------------------------------------
 " NERDTree options {{{1
 "
-nmap <C-n> :NERDTreeToggle<CR>
+nmap ,m :NERDTreeToggle<CR>
+nmap ,n :NERDTreeFind<CR>
 
 "------------------------------------------------------------
 " Mappings {{{1
