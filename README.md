@@ -11,6 +11,9 @@ Yet another personal dotfiles repo.
     * git hist - for easy and human-readable git history
     * git ci - usual alias for git commit
     * git st - git status
+* tmux config
+    * includes a fix for colour scheme in Vim
+    * Mouse scroll and selection (with option) key is enabled
 * Vim config using vundle
     * NERDTree for file exploring
     * vim-snipmate plugin for easy snippet insertion on TAB
@@ -52,4 +55,5 @@ Fetch the repo with submodules and run the install script:
     $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
     $ cd YOUR_FOLDER
     $ install/install.sh
+
 
