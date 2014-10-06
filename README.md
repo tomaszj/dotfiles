@@ -39,8 +39,6 @@ Yet another personal dotfiles repo.
     * Ack for project-wide searching
     * vim-commentary for easy line commenting
 
-* Simple installation script, which also compiles Command-t C extension
-
 ## Pre-requisites
 
 You'll need to have:
