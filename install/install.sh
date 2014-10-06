@@ -23,6 +23,10 @@ ln -nfs $WORKING_DIR/vim/gvimrc $HOME/.gvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.vimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.vim
 
+# Link to tmux config file
+echo "Linking ~/.tmux.conf"
+ln -nfs $WORKING_DIR/tmux/tmux.conf $HOME/.tmux.conf
+
 # Link to zsh config files using zprezto
 setopt EXTENDED_GLOB
 for rcfile in $WORKING_DIR/zsh/zprezto/runcoms/^README.md(.N); do
