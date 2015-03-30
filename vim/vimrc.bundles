@@ -54,11 +54,11 @@ Bundle 'tpope/vim-rails'
 " Git support
 Bundle 'tpope/vim-fugitive'
 
-" Syntastic for on-the-go syntax checking
-Bundle 'scrooloose/syntastic'
-
 " Signify for showing quick diff in the left column
 Bundle 'mhinz/vim-signify'
+
+" Syntastic for on-the-go syntax checking
+Bundle 'scrooloose/syntastic'
 
 " vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
 Bundle 'tpope/vim-endwise'
