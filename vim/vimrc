@@ -14,6 +14,9 @@ endif
 " Filetype detection enabled back again
 filetype plugin indent on
 
+" Set Omni completion
+set omnifunc=syntaxcomplete#Complete
+
 " Enable syntax highlighting
 syntax on
 
