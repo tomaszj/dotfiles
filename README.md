@@ -23,7 +23,7 @@ Yet another personal dotfiles repo.
     * vim-bufferline for easy display of used buffers in the status line
     * vim-easymotion for vimperator-like finding (use ,,\<motion\>, e.g. ,,w)
     * sparkup for Zen Coding (try div#header[param=value] > ul > li\*3 < p{Waaat?} and hit Ctrl+E)
-    * yankstack for cycling through last yank items when pasting (use Ctrl+p after pasting)
+    * yankstack for cycling through last yank items when pasting (use ,p or ,P after pasting)
     * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
@@ -38,6 +38,7 @@ Yet another personal dotfiles repo.
     * delimitMate for insertion of closing quotes, brackets, etc.
     * Ack for project-wide searching
     * vim-commentary for easy line commenting
+    * vim-trailing-whitespace for easy removal of trailing whitespace using :FixWhitespace
 
 ## Pre-requisites
 
