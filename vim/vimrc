@@ -133,11 +133,6 @@ nmap ,n :NERDTreeFind<CR>
 "------------------------------------------------------------
 " Mappings {{{1
 "
-" Setup yankstack's mappings
-" let g:yankstack_map_keys = 0 " Prevent default meta+P mappings
-call yankstack#setup()
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " Map ',' to be the leader key
 let mapleader = ','

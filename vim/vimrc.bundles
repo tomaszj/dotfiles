@@ -33,9 +33,6 @@ Bundle 'Lokaltog/vim-easymotion'
 " Sparkup for Zen Coding (i.e. expanding div#header to HTML)
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" Yankstack for easy viewing of previous registers' contents
-Bundle 'maxbrunsfeld/vim-yankstack'
-
 " CtrlP for fuzzy filename search
 Bundle 'kien/ctrlp.vim'
 
