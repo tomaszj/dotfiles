@@ -3,86 +3,88 @@
 "
 
 " Snipmate, vim-snippets and its dependencies
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 
 " Enable :FixWhitespace command to remove trailing whitespace
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " NERDTree
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " Surround for easy changing of delimiters
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 " Solarized vim theme
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 " Airline status line
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " vim-bufferline for display of used buffers
-Bundle 'bling/vim-bufferline'
+Plugin 'bling/vim-bufferline'
 
 " Easymotion for easier cursor movement in the text
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 " Sparkup for Zen Coding (i.e. expanding div#header to HTML)
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " CtrlP for fuzzy filename search
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Matchit for better % behaviour - tags, etc.
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
 
 " Vim Scala
-Bundle 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala'
 
 " Vim Ruby
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'vim-ruby/vim-ruby'
 
 " Vim Rails
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 " Git support
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Signify for showing quick diff in the left column
-Bundle 'mhinz/vim-signify'
+Plugin 'mhinz/vim-signify'
 
 " Syntastic for on-the-go syntax checking
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
-Bundle 'tpope/vim-endwise'
+Plugin 'tpope/vim-endwise'
 
 " Delimitmate for automatic adding of closing braces, etc."
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 
 " Ack for project-wide searching
-Bundle 'ack.vim'
+Plugin 'ack.vim'
 
 " vim-commentary for easy line commenting
-Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 
 " Rainbow Parentheses for better colouring when needed
 " I am looking at you, Clojure
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " vim-coffee-script for CoffeeScript support
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
 " vim-textobj-rubyblock for ruby block selection
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock' 
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " Markdown support
-Bundle 'plasticboy/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
 " Better Join!
-Bundle 'sk1418/Join'
+Plugin 'sk1418/Join'
+
+Plugin 'rust-lang/rust.vim'
 
