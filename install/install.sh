@@ -23,6 +23,11 @@ ln -nfs $WORKING_DIR/vim/gvimrc $HOME/.gvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.vimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.vim
 
+# Same for neovim
+ln -nfs $WORKING_DIR/vim/vimrc $HOME/.nvimrc
+ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.nvimrc.bundles
+ln -nfs $WORKING_DIR/vim $HOME/.nvim
+
 # Link to tmux config file
 echo "Linking ~/.tmux.conf"
 ln -nfs $WORKING_DIR/tmux/tmux.conf $HOME/.tmux.conf
