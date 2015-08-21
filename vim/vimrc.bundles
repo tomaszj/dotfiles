@@ -44,6 +44,7 @@ Plugin 'derekwyatt/vim-scala'
 
 " Vim Ruby
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rbenv'
 
 " Vim Rails
 Plugin 'tpope/vim-rails'
@@ -69,9 +70,18 @@ Plugin 'ack.vim'
 " vim-commentary for easy line commenting
 Plugin 'tpope/vim-commentary'
 
+" *** CLOJURE Support ***
 " Rainbow Parentheses for better colouring when needed
 " I am looking at you, Clojure
 Plugin 'kien/rainbow_parentheses.vim'
+
+" Fireplace.vim for REPL integration
+" Plugin 'tpope/vim-salve'
+" Plugin 'tpope/vim-projectionist'
+" Plugin 'tpope/vim-dispatch'
+" Plugin 'tpope/vim-fireplace'
+
+
 
 " vim-coffee-script for CoffeeScript support
 Plugin 'kchmck/vim-coffee-script'
@@ -83,8 +93,26 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 " Markdown support
 Plugin 'plasticboy/vim-markdown'
 
+" Dockerfile support
+Plugin 'ekalinin/Dockerfile.vim'
+
+" Region editing
+Plugin 'chrisbra/NrrwRgn'
+
 " Better Join!
 Plugin 'sk1418/Join'
 
 Plugin 'rust-lang/rust.vim'
+
+" In-place Ruby execution
+Plugin 't9md/vim-ruby-xmpfilter'
+
+" Space to repeat motions
+Plugin 'spiiph/vim-space'
+
+" Switch for quick switching of values or code styles (e.g. Hashes in Ruby)
+Plugin 'AndrewRadev/switch.vim'
+
+" Taglist for quick generation of tags in the source file
+Plugin 'vim-scripts/taglist.vim'
 

@@ -142,7 +142,7 @@ let mapleader = ','
 map Y y$
 
 " Use a semicolon (;) as colon (:) to reduce a number of keystrokes
-nnoremap ; :
+" nnoremap ; :
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
@@ -190,6 +190,13 @@ set wildignore+=*/target/**/*       " Ignore SBT products
 set wildignore+=*/results/**/*      " Ignore Gatling results
 "------------------------------------------------------------
 
+nmap <buffer> <F4> <Plug>(xmpfilter-run)
+xmap <buffer> <F4> <Plug>(xmpfilter-run)
+imap <buffer> <F4> <Plug>(xmpfilter-run)
+nmap <buffer> <F3> <Plug>(xmpfilter-mark)
+xmap <buffer> <F3> <Plug>(xmpfilter-mark)
+imap <buffer> <F3> <Plug>(xmpfilter-mark)
+
 "------------------------------------------------------------
 " Language specific settings
 "------------------------------------------------------------
@@ -199,4 +206,7 @@ autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesActivate
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadRound
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadSquare
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadBraces
+
+" Set proper executable for taglist.vim
+let Tlist_Ctags_Cmd = "/opt/boxen/homebrew/bin/ctags"
 
