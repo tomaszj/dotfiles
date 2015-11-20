@@ -27,6 +27,9 @@ ln -nfs $WORKING_DIR/vim $HOME/.vim
 ln -nfs $WORKING_DIR/vim/vimrc $HOME/.nvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.nvimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.nvim
+mkdir -p ~/.config
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 # Link to tmux config file
 echo "Linking ~/.tmux.conf"
@@ -43,7 +46,7 @@ echo "Linking ~/.zprezto folder"
 ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto
 
 # Create a folder for user zsh scripts
-USER_ZSH_SCRIPTS_PATH="$HOME/.zsh.scripts"
+USER_ZSH_SCRIPTS_PATH="$HOME/.zsh.custom_scripts"
 if [[ ! -d $USER_ZSH_SCRIPTS_PATH ]]; then
   echo "Creating ~/${USER_ZSH_SCRIPTS_PATH:t} folder for user scripts"
   mkdir $USER_ZSH_SCRIPTS_PATH
