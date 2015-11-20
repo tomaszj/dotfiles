@@ -210,3 +210,11 @@ autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadBraces
 " Set proper executable for taglist.vim
 let Tlist_Ctags_Cmd = "/opt/boxen/homebrew/bin/ctags"
 
+" Set Solarized Light when ambient light is strong, dark otherwise.
+let hour = strftime("%H")
+if 6 <= hour && hour < 19
+  set background=light
+else
+  set background=dark
+endif
+

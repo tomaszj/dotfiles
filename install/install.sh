@@ -3,8 +3,6 @@
 
 echo "Installing TJ's dotfiles..."
 
-pushd . 1> /dev/null
-
 # Find the directory that this script is running from
 INSTALL_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE:-$0}" )" && pwd )"
 cd $INSTALL_SCRIPT_DIR/..
@@ -67,9 +65,15 @@ cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
 
-# source "$WORKING_DIR/git/set_git_aliases.sh"
+# Install autorun iTerm colours script.
+if [ ! -f "~/Library/Application Support/iTerm/AutoLaunch.scpt" ]
+then
+  mkdir -p ~/Library/Application\ Support/iTerm
+else
+  rm ~/Library/Application\ Support/iTerm/AutoLaunch.scpt
+fi
 
-popd 1> /dev/null
+cp $WORKING_DIR/scripts/itermcolors.applescript ~/Library/Application\ Support/iTerm/AutoLaunch.scpt
 
 echo "Done!"
 

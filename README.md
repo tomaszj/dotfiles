@@ -10,11 +10,13 @@ Yet another personal dotfiles repo.
 * Set (short for now) of git aliases, set up by script
     * git hist - for easy and human-readable git history
     * git ci - usual alias for git commit
+    * git ci - usual alias for git checkout
     * git st - git status
 * tmux config
     * includes a fix for colour scheme in Vim
     * Mouse scroll and selection (with option) key is enabled
 * Vim config using vundle
+    * Alias and config link to neovim
     * NERDTree for file exploring
     * vim-snipmate plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
