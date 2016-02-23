@@ -25,11 +25,9 @@ Yet another personal dotfiles repo.
     * vim-bufferline for easy display of used buffers in the status line
     * vim-easymotion for vimperator-like finding (use ,,\<motion\>, e.g. ,,w)
     * sparkup for Zen Coding (try div#header[param=value] > ul > li\*3 < p{Waaat?} and hit Ctrl+E)
-    * remap for ';' to mimic ':' without using Shift key
     * \<F2\> For toggling paste mode
     * no swap files generated
     * matchit for better % matching - tags, if/else clauses, etc.
-    * vim-scala for better Scala support
     * vim-ruby for better Ruby support
     * vim-rails for better Rails support
     * vim-fugitive for in-Vim Git support
@@ -61,5 +59,4 @@ Fetch the repo with submodules and run the install script:
     $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
     $ cd YOUR_FOLDER
     $ install/install.sh
-
 

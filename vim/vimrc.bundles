@@ -39,9 +39,6 @@ Plugin 'kien/ctrlp.vim'
 " Matchit for better % behaviour - tags, etc.
 Plugin 'matchit.zip'
 
-" Vim Scala
-Plugin 'derekwyatt/vim-scala'
-
 " Vim Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rbenv'

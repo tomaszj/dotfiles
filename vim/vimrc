@@ -109,10 +109,6 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F2> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F2>
 
-"------------------------------------------------------------
-" Look-a-likes {{{1
-set background=dark
-colorscheme solarized
 
 
 "------------------------------------------------------------
@@ -125,24 +121,28 @@ set softtabstop=2
 set expandtab
 
 "------------------------------------------------------------
-" NERDTree options {{{1
-"
-nmap ,m :NERDTreeToggle<CR>
-nmap ,n :NERDTreeFind<CR>
-
-"------------------------------------------------------------
 " Mappings {{{1
 "
 
+" Map jj to work as <Esc> in insert mode.
+" inoremap jj <Esc>
+
 " Map ',' to be the leader key
 let mapleader = ','
+
+nmap <Leader>m :NERDTreeToggle<CR>
+nmap <Leader>j :NERDTreeFind<CR><CR>
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
 
+" Use soft-wrap j and k movements
+nnoremap j gj
+nnoremap k gk
+
 " Use a semicolon (;) as colon (:) to reduce a number of keystrokes
-" nnoremap ; :
+"nnoremap ; :
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
@@ -150,10 +150,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 " Use backslash as a qualifier for using vim-easymotion
 let g:EasyMotion_leader_key = '<Leader><Leader>'
-
-" Better search regexes
-" nnoremap / /\v
-" vnoremap / /\v
 
 " CtrlP fuzzy finder settings
 "------------------------------------------------------------
@@ -209,6 +205,10 @@ autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadBraces
 
 " Set proper executable for taglist.vim
 let Tlist_Ctags_Cmd = "/opt/boxen/homebrew/bin/ctags"
+
+"------------------------------------------------------------
+" Look-a-likes {{{1
+colorscheme solarized
 
 " Set Solarized Light when ambient light is strong, dark otherwise.
 let hour = strftime("%H")

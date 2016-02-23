@@ -65,15 +65,5 @@ cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
 
-# Install autorun iTerm colours script.
-if [ ! -f "~/Library/Application Support/iTerm/AutoLaunch.scpt" ]
-then
-  mkdir -p ~/Library/Application\ Support/iTerm
-else
-  rm ~/Library/Application\ Support/iTerm/AutoLaunch.scpt
-fi
-
-cp $WORKING_DIR/scripts/itermcolors.applescript ~/Library/Application\ Support/iTerm/AutoLaunch.scpt
-
 echo "Done!"
 

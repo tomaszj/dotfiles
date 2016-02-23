@@ -5,11 +5,11 @@ on run argv
 	else
 		set tint to "dark"
 	end if
-	
+
 	if (count of argv) is not equal to 0 and (item 1 of argv as string) is not equal to "" then
 		set tint to (item 1 of argv as string)
 	end if
-	
+
 	tell application "iTerm"
 		activate
 		set t to current terminal
@@ -18,7 +18,7 @@ on run argv
 		on error
 			set t to (make new terminal)
 		end try
-		
+
 		repeat with t in terminals
 			tell t
 				repeat with s in sessions
@@ -27,7 +27,7 @@ on run argv
 					on error
 						set s to launch session "Default Session"
 					end try
-					
+
 					tell s
 						if tint is "light" then
 							set ansiWhiteColor to {6.003730859375E+4, 5.83269609375E+4, 5.2284546875E+4}
@@ -83,6 +83,6 @@ on run argv
 			end tell
 		end repeat
 	end tell
-	
+
 	return
 end run
