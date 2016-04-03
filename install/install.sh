@@ -9,15 +9,9 @@ cd $INSTALL_SCRIPT_DIR/..
 
 WORKING_DIR="$(pwd)"
 
-if find $WORKING_DIR/zsh/zprezto -maxdepth 0 -empty | read v; then
-  echo "Custom zprezto not present, fetching the default one"
-  git clone --recursive https://github.com/sorin-ionescu/prezto.git $WORKING_DIR/zsh/zprezto
-fi
-
 # Link to vim config files
 echo "Linking ~/.vimrc and ~/.vim folder"
 ln -nfs $WORKING_DIR/vim/vimrc $HOME/.vimrc
-ln -nfs $WORKING_DIR/vim/gvimrc $HOME/.gvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.vimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.vim
 
@@ -26,8 +20,8 @@ ln -nfs $WORKING_DIR/vim/vimrc $HOME/.nvimrc
 ln -nfs $WORKING_DIR/vim/vimrc.bundles $HOME/.nvimrc.bundles
 ln -nfs $WORKING_DIR/vim $HOME/.nvim
 mkdir -p ~/.config
-ln -s ~/.vim ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+ln -nfs ~/.vim ~/.config/nvim
+ln -nfs ~/.vimrc ~/.config/nvim/init.vim
 
 # Link to tmux config file
 echo "Linking ~/.tmux.conf"
@@ -35,13 +29,9 @@ ln -nfs $WORKING_DIR/tmux/tmux.conf $HOME/.tmux.conf
 
 # Link to zsh config files using zprezto
 setopt EXTENDED_GLOB
-for rcfile in $WORKING_DIR/zsh/zprezto/runcoms/^README.md(.N); do
-  echo "Linking ~/.${rcfile:t}"
-  ln -nfs "$rcfile" "$HOME/.${rcfile:t}"
-done
-
-echo "Linking ~/.zprezto folder"
-ln -fs $WORKING_DIR/zsh/zprezto $HOME/.zprezto
+echo "Linking ~/.zshrc and zgen"
+ln -nfs "$WORKING_DIR/zsh/zshrc" "$HOME/.zshrc"
+ln -nfs $WORKING_DIR/zsh/zgen $HOME/.zgen
 
 # Create a folder for user zsh scripts
 USER_ZSH_SCRIPTS_PATH="$HOME/.zsh.custom_scripts"

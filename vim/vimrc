@@ -209,12 +209,13 @@ let Tlist_Ctags_Cmd = "/opt/boxen/homebrew/bin/ctags"
 "------------------------------------------------------------
 " Look-a-likes {{{1
 colorscheme solarized
+set background=light
 
 " Set Solarized Light when ambient light is strong, dark otherwise.
-let hour = strftime("%H")
-if 6 <= hour && hour < 19
-  set background=light
-else
-  set background=dark
-endif
+" let hour = strftime("%H")
+" if 6 <= hour && hour < 19
+"   set background=light
+" else
+"   set background=dark
+" endif
 

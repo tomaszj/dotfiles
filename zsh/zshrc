@@ -1,0 +1,34 @@
+#
+# Basic zsh setup
+#
+
+# Load zgen
+source "${HOME}/.zgen/zgen.zsh"
+
+# check if there's no init script
+if ! zgen saved; then
+  # load oh my zsh
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/git
+
+  zgen oh-my-zsh themes/sorin
+
+  zgen save
+fi
+
+# Source Start-up .zsh scripts
+DOTFILES_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts"
+if [[ -d "$DOTFILES_SCRIPTS_PATH" ]]; then
+  for config_file ($DOTFILES_SCRIPTS_PATH/*.zsh); do
+    source $config_file
+  done
+fi
+
+# Source User .zsh scripts
+USER_SCRIPTS_PATH="$HOME/.zsh.custom_scripts"
+if [[ -d "$USER_SCRIPTS_PATH" ]]; then
+  for config_file ($USER_SCRIPTS_PATH/*.zsh); do
+    source $config_file
+  done
+fi
+

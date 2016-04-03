@@ -113,3 +113,6 @@ Plugin 'AndrewRadev/switch.vim'
 " Taglist for quick generation of tags in the source file
 Plugin 'vim-scripts/taglist.vim'
 
+" Startify for cool start-up screen.
+Plugin 'mhinz/vim-startify'
+
