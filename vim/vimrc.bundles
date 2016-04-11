@@ -99,6 +99,7 @@ Plugin 'chrisbra/NrrwRgn'
 " Better Join!
 Plugin 'sk1418/Join'
 
+" Rust support
 Plugin 'rust-lang/rust.vim'
 
 " In-place Ruby execution
@@ -115,4 +116,8 @@ Plugin 'vim-scripts/taglist.vim'
 
 " Startify for cool start-up screen.
 Plugin 'mhinz/vim-startify'
+
+" JSX support for React.js
+Plugin 'mxw/vim-jsx'
+
 

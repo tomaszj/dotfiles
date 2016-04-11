@@ -10,7 +10,7 @@ Yet another personal dotfiles repo.
 * Set (short for now) of git aliases, set up by script
     * git hist - for easy and human-readable git history
     * git ci - usual alias for git commit
-    * git ci - usual alias for git checkout
+    * git co - usual alias for git checkout
     * git st - git status
 * tmux config
     * includes a fix for colour scheme in Vim
@@ -37,13 +37,14 @@ Yet another personal dotfiles repo.
     * delimitMate for insertion of closing quotes, brackets, etc.
     * Ag (ag.vim) for project-wide searching
     * vim-commentary for easy line commenting
-    * xmpfilter for in-line Ruby execution
+    * xmpfilter for in-line Ruby execution (requires rcodetools gem installed)
     * Dockerfile.vim for Dockerfile syntax highlighting
     * vim-space plugin to repeat motions with space in normal mode
     * switch.vim for easy changing of Hash style in Ruby
     * taglist.vim for sourcecode tag navigation
-    * NrrwRgs for region editing
+    * NrrwRgn for region editing
     * vim-trailing-whitespace for easy removal of trailing whitespace using :FixWhitespace
+    * vim-jsx for JSX support
 
 ## Pre-requisites
 

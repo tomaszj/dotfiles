@@ -206,6 +206,9 @@ autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadBraces
 " Set proper executable for taglist.vim
 let Tlist_Ctags_Cmd = "/opt/boxen/homebrew/bin/ctags"
 
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
+
 "------------------------------------------------------------
 " Look-a-likes {{{1
 colorscheme solarized
