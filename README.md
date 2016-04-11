@@ -6,7 +6,7 @@ Yet another personal dotfiles repo.
 ## What's included
 
 * Zsh config using zprezto
-    * all scripts (such as exports, paths, etc.) can be placed in ~/.zsh.scripts folder
+    * all scripts (such as exports, paths, etc.) can be placed in ~/.zsh.custom_scripts folder
 * Set (short for now) of git aliases, set up by script
     * git hist - for easy and human-readable git history
     * git ci - usual alias for git commit
