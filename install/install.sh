@@ -31,6 +31,7 @@ ln -nfs $WORKING_DIR/tmux/tmux.conf $HOME/.tmux.conf
 setopt EXTENDED_GLOB
 echo "Linking ~/.zshrc and zgen"
 ln -nfs "$WORKING_DIR/zsh/zshrc" "$HOME/.zshrc"
+ln -nfs "$WORKING_DIR/zsh/zprofile" "$HOME/.zprofile"
 ln -nfs $WORKING_DIR/zsh/zgen $HOME/.zgen
 
 # Create a folder for user zsh scripts
