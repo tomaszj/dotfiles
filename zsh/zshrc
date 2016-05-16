@@ -17,13 +17,16 @@ if ! zgen saved; then
 
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-history-substring-search
-  zgen load zsh-users/zsh-completions
+  zgen load zsh-users/zsh-completions src
   zgen load RobSis/zsh-completion-generator
 
   zgen oh-my-zsh themes/sorin
 
   zgen save
 fi
+
+# Match standard stuff + camel case
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:[^A-Z0-9]||[A-Z0-9]=** r:|=*' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Source Start-up .zsh scripts
 DOTFILES_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts"
