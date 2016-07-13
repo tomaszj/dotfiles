@@ -21,8 +21,9 @@ Plugin 'tpope/vim-repeat'
 " Solarized vim theme
 Plugin 'altercation/vim-colors-solarized'
 
-" Airline status line
+" Airline status line plus themes
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " vim-bufferline for display of used buffers
 Plugin 'bling/vim-bufferline'
@@ -34,7 +35,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " CtrlP for fuzzy filename search
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Matchit for better % behaviour - tags, etc.
 Plugin 'matchit.zip'
@@ -120,4 +121,18 @@ Plugin 'mhinz/vim-startify'
 " JSX support for React.js
 Plugin 'mxw/vim-jsx'
 
+" Support for sbt syntax
+Plugin 'derekwyatt/vim-sbt'
+
+" Support for puppet
+Plugin 'rodjek/vim-puppet'
+
+" Easy alignment in vim
+Plugin 'junegunn/vim-easy-align'
+
+" Support for Elixir
+Plugin 'elixir-lang/vim-elixir'
+
+" Support for elm
+Plugin 'lambdatoast/elm.vim'
 

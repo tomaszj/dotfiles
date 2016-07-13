@@ -131,7 +131,7 @@ set expandtab
 let mapleader = ','
 
 nmap <Leader>m :NERDTreeToggle<CR>
-nmap <Leader>j :NERDTreeFind<CR><CR>
+nmap <Leader>j :NERDTreeFind<CR>
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
@@ -155,7 +155,10 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 "------------------------------------------------------------
 "
 let g:ctrlp_map = '<Leader>t'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+if executable("ag")
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+endif
 
 "------------------------------------------------------------
 
@@ -213,6 +216,15 @@ let g:jsx_ext_required = 0
 " Look-a-likes {{{1
 colorscheme solarized
 set background=light
+
+" vim-airline theme
+let g:airline_theme='solarized'
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Set Solarized Light when ambient light is strong, dark otherwise.
 " let hour = strftime("%H")

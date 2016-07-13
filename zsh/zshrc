@@ -44,3 +44,6 @@ if [[ -d "$USER_SCRIPTS_PATH" ]]; then
   done
 fi
 
+# Finally, set extended globbing
+setopt extendedglob
+
