@@ -62,8 +62,8 @@ Plugin 'tpope/vim-endwise'
 " Delimitmate for automatic adding of closing braces, etc."
 Plugin 'Raimondi/delimitMate'
 
-" Ag for project-wide searching
-Plugin 'rking/ag.vim'
+" Ag/Ack for project-wide searching
+Plugin 'mileszs/ack.vim'
 
 " vim-commentary for easy line commenting
 Plugin 'tpope/vim-commentary'

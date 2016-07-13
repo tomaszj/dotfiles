@@ -158,6 +158,8 @@ let g:ctrlp_map = '<Leader>t'
 
 if executable("ag")
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev ag Ack
 endif
 
 "------------------------------------------------------------
