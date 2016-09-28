@@ -27,6 +27,10 @@ ln -nfs ~/.vimrc ~/.config/nvim/init.vim
 echo "Linking ~/.tmux.conf"
 ln -nfs $WORKING_DIR/tmux/tmux.conf $HOME/.tmux.conf
 
+# Link to ctags file
+echo "Linking ~/.ctags"
+ln -nfs $WORKING_DIR/other_dotfiles/ctags $HOME/.ctags
+
 # Link to zsh config files using zprezto
 setopt EXTENDED_GLOB
 echo "Linking ~/.zshrc and zgen"
