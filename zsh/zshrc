@@ -2,6 +2,8 @@
 # Basic zsh setup
 #
 
+export COMPLETION_WAITING_DOTS="true"
+
 # Load zgen
 source "${HOME}/.zgen/zgen.zsh"
 
