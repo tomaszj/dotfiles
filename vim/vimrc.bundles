@@ -118,6 +118,10 @@ Plugin 'vim-scripts/taglist.vim'
 " Startify for cool start-up screen.
 Plugin 'mhinz/vim-startify'
 
+" JavaScript support
+Plugin 'helino/vim-json'
+Plugin 'pangloss/vim-javascript'
+
 " JSX support for React.js
 Plugin 'mxw/vim-jsx'
 
