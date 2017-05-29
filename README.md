@@ -18,7 +18,7 @@ Yet another personal dotfiles repo.
 * Vim config using vundle
     * Alias and config link to neovim
     * NERDTree for file exploring
-    * vim-snipmate plugin for easy snippet insertion on TAB
+    * UltiSnips plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
     * CtrlP plugin for easy file access (use ,t to open the selection pop-up)
     * vim-airline for improved status line

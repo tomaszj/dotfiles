@@ -2,11 +2,9 @@
 " --- List of bundles to be installed ---
 "
 
-" Snipmate, vim-snippets and its dependencies
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+" UltiSnips and snippets lib
 Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 
 " Enable :FixWhitespace command to remove trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
@@ -136,6 +134,8 @@ Plugin 'junegunn/vim-easy-align'
 
 " Support for Elixir
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'mmorearty/elixir-ctags'
+
 
 " Support for elm
 Plugin 'lambdatoast/elm.vim'

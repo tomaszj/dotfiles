@@ -1,6 +1,7 @@
 #!/bin/zsh
 # Script installing TJ's dotfiles in your home folder
 
+
 echo "Installing TJ's dotfiles..."
 
 # Find the directory that this script is running from
@@ -56,6 +57,9 @@ mkdir $DOTFILES_ZSH_SCRIPTS_PATH
 # Populate the startup scripts
 cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 
+# Install neovim Python package
+echo "Installing neovim package for Python 3"
+pip3 install neovim
 
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
