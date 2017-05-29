@@ -31,7 +31,7 @@ Yet another personal dotfiles repo.
     * vim-signify for showing diff on lines within the editor
     * vim-endwise for automatic adding of ending clauses - e.g. 'end' in Ruby
     * delimitMate for insertion of closing quotes, brackets, etc.
-    * Ag (ag.vim) for project-wide searching
+    * Ag (using ack.vim with changed config) for project-wide searching
     * vim-commentary for easy line commenting
     * xmpfilter for in-line Ruby execution (requires rcodetools gem installed)
     * Dockerfile.vim for Dockerfile syntax highlighting
