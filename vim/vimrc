@@ -54,6 +54,9 @@ set showcmd
 " mapping of <C-L> below)
 set hlsearch
 
+" Show result of substitute command in-line straight away.
+set inccommand=split
+
 "------------------------------------------------------------
 " Usability options {{{1
 "

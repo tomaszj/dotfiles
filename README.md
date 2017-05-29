@@ -17,6 +17,7 @@ Yet another personal dotfiles repo.
     * Mouse scroll and selection (with option) key is enabled
 * Vim config using vundle
     * Alias and config link to neovim
+    * in-line results for substitution command (set inccommand=split)
     * NERDTree for file exploring
     * UltiSnips plugin for easy snippet insertion on TAB
     * vim-surround (with vim-repeat) for easy editing of surrounding delimiters
