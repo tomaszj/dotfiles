@@ -7,11 +7,6 @@ Yet another personal dotfiles repo.
 
 * Zsh config using zprezto
     * all scripts (such as exports, paths, etc.) can be placed in ~/.zsh.custom_scripts folder
-* Set (short for now) of git aliases, set up by script
-    * git hist - for easy and human-readable git history
-    * git ci - usual alias for git commit
-    * git co - usual alias for git checkout
-    * git st - git status
 * tmux config
     * includes a fix for colour scheme in Vim
     * Mouse scroll and selection (with option) key is enabled
@@ -46,6 +41,10 @@ Yet another personal dotfiles repo.
     * NrrwRgn for region editing
     * vim-trailing-whitespace for easy removal of trailing whitespace using :FixWhitespace
     * vim-jsx for JSX support
+
+## What's not included
+
+I used to have a few custom git shortcuts, but now I resort to these provided by [oh-my-zsh's git plugin](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git).
 
 ## Pre-requisites
 
