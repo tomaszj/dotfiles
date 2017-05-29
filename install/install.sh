@@ -57,9 +57,11 @@ mkdir $DOTFILES_ZSH_SCRIPTS_PATH
 # Populate the startup scripts
 cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 
-# Install neovim Python package
-echo "Installing neovim package for Python 3"
+# Install neovim Python and Ruby packages
+echo "Installing neovim package for Python 3 and Ruby"
 pip3 install neovim
+
+gem install neovim
 
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
