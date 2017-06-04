@@ -41,6 +41,7 @@ Yet another personal dotfiles repo.
     * NrrwRgn for region editing
     * vim-trailing-whitespace for easy removal of trailing whitespace using :FixWhitespace
     * vim-jsx for JSX support
+    * neoterm for easier interaction with NeoVim's builtin in :terminal
 
 ## What's not included
 

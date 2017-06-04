@@ -254,4 +254,18 @@ let g:UltiSnipsEditSplit="vertical"
 " Markdown conf - prevent folding
 let g:vim_markdown_folding_disabled = 1
 
+let g:neoterm_position = 'horizontal'
+let g:neoterm_automap_keys = ',k'
+
+nnoremap <silent> <f10> :TREPLSendFile<cr>
+nnoremap <silent> <f9> :TREPLSendLine<cr>
+vnoremap <silent> <f9> :TREPLSendSelection<cr>
+
+" Useful maps
+" hide/close terminal
+nnoremap <silent> ,kh :call neoterm#close()<cr>
+" clear terminal
+nnoremap <silent> ,kl :call neoterm#clear()<cr>
+" kills the current job (send a <c-c>)
+nnoremap <silent> ,kc :call neoterm#kill()<cr>
 

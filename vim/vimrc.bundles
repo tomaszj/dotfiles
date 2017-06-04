@@ -140,3 +140,5 @@ Plugin 'mmorearty/elixir-ctags'
 " Support for elm
 Plugin 'lambdatoast/elm.vim'
 
+" Add neoterm wrapper for NeoVim's terminal
+Plugin 'kassio/neoterm'
