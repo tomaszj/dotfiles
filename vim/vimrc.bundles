@@ -142,3 +142,6 @@ Plugin 'lambdatoast/elm.vim'
 
 " Add neoterm wrapper for NeoVim's terminal
 Plugin 'kassio/neoterm'
+
+" Move highlights/lines with A-j and A-k
+Plugin 'matze/vim-move'
