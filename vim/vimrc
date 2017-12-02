@@ -269,3 +269,6 @@ nnoremap <silent> ,kl :call neoterm#clear()<cr>
 " kills the current job (send a <c-c>)
 nnoremap <silent> ,kc :call neoterm#kill()<cr>
 
+set undodir=~/.vim/undodir
+
+
