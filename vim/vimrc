@@ -54,9 +54,10 @@ set showcmd
 " mapping of <C-L> below)
 set hlsearch
 
-" Show result of substitute command in-line straight away.
-set inccommand=split
-
+" Show result of substitute command in-line straight away. Only for neovim
+if has('nvim')
+  set inccommand=split
+endif
 "------------------------------------------------------------
 " Usability options {{{1
 "
@@ -270,5 +271,4 @@ nnoremap <silent> ,kl :call neoterm#clear()<cr>
 nnoremap <silent> ,kc :call neoterm#kill()<cr>
 
 set undodir=~/.vim/undodir
-
 
