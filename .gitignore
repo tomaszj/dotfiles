@@ -1,5 +1,6 @@
 vim/bundle
 vim/.netrwhist
+vim/undodir
 .DS_Store
 
 Makefile
