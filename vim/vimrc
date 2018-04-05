@@ -270,5 +270,10 @@ nnoremap <silent> ,kl :call neoterm#clear()<cr>
 " kills the current job (send a <c-c>)
 nnoremap <silent> ,kc :call neoterm#kill()<cr>
 
+" Vim commentary config
+autocmd FileType ruby setlocal commentstring=#\ %s
+
+" Persistent undo
 set undodir=~/.vim/undodir
+set undofile
 
