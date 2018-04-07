@@ -117,7 +117,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'mhinz/vim-startify'
 
 " JavaScript support
-Plugin 'helino/vim-json'
+Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 
 " JSX support for React.js
@@ -139,9 +139,6 @@ Plugin 'mmorearty/elixir-ctags'
 
 " Support for elm
 Plugin 'lambdatoast/elm.vim'
-
-" Add neoterm wrapper for NeoVim's terminal
-Plugin 'kassio/neoterm'
 
 " Move highlights/lines with A-j and A-k
 Plugin 'matze/vim-move'

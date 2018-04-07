@@ -2,14 +2,16 @@ set nocompatible
 " Required by Vundle
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
+
+call vundle#end()
 
 " Filetype detection enabled back again
 filetype plugin indent on
@@ -18,7 +20,7 @@ filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 " Enable syntax highlighting
-syntax on
+syntax enable
 
 "------------------------------------------------------------
 " Must have options {{{1
