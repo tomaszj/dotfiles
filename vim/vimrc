@@ -158,6 +158,10 @@ nnoremap k gk
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Buffer switching
+map <A-Left> <Esc>:bprev<CR>
+map <A-Right> <Esc>:bnext<CR>
+
 " Use backslash as a qualifier for using vim-easymotion
 let g:EasyMotion_leader_key = '<Leader><Leader>'
 
