@@ -59,7 +59,7 @@ cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 
 # Install neovim Python and Ruby packages
 echo "Installing neovim package for Python 3 and Ruby"
-pip3 install neovim
+pip install neovim
 
 gem install neovim
 
