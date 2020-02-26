@@ -280,6 +280,10 @@ nnoremap <silent> ,kc :call neoterm#kill()<cr>
 " Vim commentary config
 autocmd FileType ruby setlocal commentstring=#\ %s
 
+" Force filetype
+autocmd BufNewFile,BufRead *.yml.template set filetype=yaml
+
+
 " Persistent undo
 set undodir=~/.vim/undodir
 set undofile

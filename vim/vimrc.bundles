@@ -142,3 +142,4 @@ Plugin 'lambdatoast/elm.vim'
 
 " Move highlights/lines with A-j and A-k
 Plugin 'matze/vim-move'
+
