@@ -14,16 +14,20 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/brew
   zgen oh-my-zsh plugins/git
   zgen oh-my-zsh plugins/osx
+  zgen oh-my-zsh plugins/fzf
   zgen oh-my-zsh plugins/sudo
-  zgen oh-my-zsh plugins/vagrant
   zgen oh-my-zsh plugins/colored-man-pages
+  zgen oh-my-zsh plugins/kubectl
 
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-history-substring-search
   zgen load zsh-users/zsh-completions src
   zgen load RobSis/zsh-completion-generator
 
-  zgen load supercrabtree/k
+  zgen load MichaelAquilina/zsh-you-should-use
+
+  # supercrabtree/k replacement to use `j` as a command
+  zgen load tomaszj/j
 
   zgen oh-my-zsh themes/sorin
 
@@ -52,3 +56,5 @@ fi
 # Finally, set extended globbing
 setopt extendedglob
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
