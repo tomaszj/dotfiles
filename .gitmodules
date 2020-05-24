@@ -1,6 +1,9 @@
 [submodule "zsh/zgen"]
 	path = zsh/zgen
 	url = https://github.com/tarjoilija/zgen.git
-[submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
+# [submodule "vim/bundle/Vundle.vim"]
+        # path = vim/bundle/Vundle.vim
+        # url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "vim/bundle/Vundle.Vim"]
+	path = vim/bundle/Vundle.Vim
+	url = https://github.com/VundleVim/Vundle.Vim
