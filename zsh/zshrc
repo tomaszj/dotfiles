@@ -45,9 +45,9 @@ if [[ -d "$DOTFILES_SCRIPTS_PATH" ]]; then
   done
 fi
 
-# Source User .zsh scripts
+# Source User .zsh scripts if not empty
 USER_SCRIPTS_PATH="$HOME/.zsh.custom_scripts"
-if [[ -d "$USER_SCRIPTS_PATH" ]]; then
+if [[ -d "$USER_SCRIPTS_PATH" && "$(ls -A $USER_SCRIPTS_PATH)" ]]; then
   for config_file ($USER_SCRIPTS_PATH/*.zsh); do
     source $config_file
   done

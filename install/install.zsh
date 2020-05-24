@@ -64,7 +64,7 @@ pip install neovim
 gem install neovim
 
 echo "Installing vim bundles"
-vim -u $HOME/.vim/vimrc.install +BundleInstall +qall
+vim -u $HOME/.vim/vimrc.install +PluginInstall +qall
 
 echo "Done!"
 

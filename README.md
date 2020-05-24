@@ -53,6 +53,7 @@ You'll need to have:
 * Git (obviously)
 * Zsh for running the install script
 * asdf installed with ruby and python
+* fzf
 
 ## Installation
 
