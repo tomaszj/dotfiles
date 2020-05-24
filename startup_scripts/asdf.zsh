@@ -1,2 +1,7 @@
 # As taken from brew output
-source /usr/local/opt/asdf/asdf.sh
+if [ -d "$HOME/.asdf" ]
+then
+    source "$HOME/.asdf/asdf.sh"
+else
+    source /usr/local/opt/asdf/asdf.sh
+fi

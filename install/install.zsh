@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/zsh -e
 # Script installing TJ's dotfiles in your home folder
 
 
@@ -62,6 +62,9 @@ echo "Installing neovim package for Python 3 and Ruby"
 pip install neovim
 
 gem install neovim
+
+# Clone Vundle if necessary
+[ ! -d "$HOME/.vim/bundle/Vundle.vim" ] && echo "Cloning Vundle..." && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "Installing vim bundles"
 vim -u $HOME/.vim/vimrc.install +BundleInstall +qall

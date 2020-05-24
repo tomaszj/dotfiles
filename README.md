@@ -52,6 +52,7 @@ You'll need to have:
 
 * Git (obviously)
 * Zsh for running the install script
+* asdf installed with ruby and python
 
 ## Installation
 
@@ -59,5 +60,5 @@ Fetch the repo with submodules and run the install script:
 
     $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
     $ cd YOUR_FOLDER
-    $ install/install.sh
+    $ install/install.zsh
 
