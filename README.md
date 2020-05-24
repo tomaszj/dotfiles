@@ -58,7 +58,7 @@ You'll need to have:
 
 Fetch the repo with submodules and run the install script:
 
-    $ git clone --recursive https://github.com/tomaszj/dotfiles YOUR_FOLDER
+    $ git clone --recurse-submodules -j8 git@github.com:tomaszj/dotfiles.git YOUR_FOLDER
     $ cd YOUR_FOLDER
     $ install/install.zsh
 
