@@ -1,6 +1,6 @@
-[submodule "zsh/zprezto"]
-	path = zsh/zprezto
-	url = https://github.com/tomaszj/prezto.git
+[submodule "zsh/zgen"]
+	path = zsh/zgen
+	url = https://github.com/tarjoilija/zgen.git
 [submodule "vim/bundle/vundle"]
 	path = vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
+	url = https://github.com/VundleVim/Vundle.vim.git
