@@ -126,6 +126,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Per file type mappings
 autocmd FileType ruby setlocal softtabstop=2 shiftwidth=2
+autocmd FileType yaml setlocal softtabstop=2 shiftwidth=2
 
 "------------------------------------------------------------
 " Mappings {{{1
