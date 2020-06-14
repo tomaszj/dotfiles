@@ -230,11 +230,20 @@ let g:jsx_ext_required = 0
 
 "------------------------------------------------------------
 " Look-a-likes {{{1
-colorscheme solarized
+" colorscheme gruvbox
 set background=light
+let g:gruvbox_contrast_light = 'hard'
+let g:gruvbox_invert_selection = 0
 
-" vim-airline theme
-let g:airline_theme='solarized'
+set termguicolors
+
+autocmd vimenter * colorscheme gruvbox
+"
+" vim-airline theme - looks like autocmd is required if the above is used on
+" vimenter
+" let g:airline_theme = 'gruvbox'
+autocmd vimenter * AirlineTheme gruvbox
+
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)

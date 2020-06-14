@@ -19,6 +19,9 @@ Plugin 'tpope/vim-repeat'
 " Solarized vim theme
 Plugin 'altercation/vim-colors-solarized'
 
+" Gruvbox vim theme
+Plugin 'gruvbox-community/gruvbox'
+
 " Airline status line plus themes
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
