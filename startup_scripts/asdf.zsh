@@ -1,7 +1,4 @@
 # As taken from brew output
-if [ -d "$HOME/.asdf" ]
-then
-    source "$HOME/.asdf/asdf.sh"
-else
-    source /usr/local/opt/asdf/asdf.sh
-fi
+export ASDF_DIR=$(brew --prefix asdf)
+source "$ASDF_DIR/asdf.sh"
+
