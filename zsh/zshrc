@@ -4,6 +4,14 @@
 
 export COMPLETION_WAITING_DOTS="true"
 
+# Source Pre start-up .zsh scripts
+DOTFILES_PRE_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts/pre"
+if [[ -d "$DOTFILES_PRE_SCRIPTS_PATH" ]]; then
+  for config_file ($DOTFILES_PRE_SCRIPTS_PATH/*.zsh); do
+    source $config_file
+  done
+fi
+
 # Load zgen
 source "${HOME}/.zgen/zgen.zsh"
 
@@ -40,10 +48,10 @@ fi
 # Match standard stuff + camel case
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:[^A-Z0-9]||[A-Z0-9]=** r:|=*' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Source Start-up .zsh scripts
-DOTFILES_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts"
-if [[ -d "$DOTFILES_SCRIPTS_PATH" ]]; then
-  for config_file ($DOTFILES_SCRIPTS_PATH/*.zsh); do
+# Source Post start-up .zsh scripts
+DOTFILES_POST_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts/post"
+if [[ -d "$DOTFILES_POST_SCRIPTS_PATH" ]]; then
+  for config_file ($DOTFILES_POST_SCRIPTS_PATH/*.zsh); do
     source $config_file
   done
 fi

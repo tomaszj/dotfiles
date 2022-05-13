@@ -48,14 +48,14 @@ fi
 
 # Create an empty folder for dotfiles zsh scripts
 DOTFILES_ZSH_SCRIPTS_PATH="$HOME/.zsh.dotfiles_scripts"
+if [[ -L $DOTFILES_ZSH_SCRIPTS_PATH ]]; then
+  unlink $DOTFILES_ZSH_SCRIPTS_PATH
+fi
 if [[ -d $DOTFILES_ZSH_SCRIPTS_PATH ]]; then
   rm -rf $DOTFILES_ZSH_SCRIPTS_PATH
 fi
+ln -nfs $WORKING_DIR/startup_scripts/ $DOTFILES_ZSH_SCRIPTS_PATH
 
-mkdir $DOTFILES_ZSH_SCRIPTS_PATH
-
-# Populate the startup scripts
-cp -r $WORKING_DIR/startup_scripts/* $DOTFILES_ZSH_SCRIPTS_PATH/
 
 # Install neovim Python and Ruby packages
 echo "Installing neovim package for Python 3 and Ruby"
